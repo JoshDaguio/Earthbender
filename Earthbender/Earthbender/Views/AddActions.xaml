@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Earthbender.Views.AddActions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Description"/>
+            <Entry x:Name="txtDescription" Placeholder="Enter Description"/>
+            <Label Text="Category"/>
+            <Picker x:Name="txtCategory" Title="Select Category">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Earth</x:String>
+                        <x:String>Water</x:String>
+                        <x:String>Air</x:String>
+                        <x:String>Fire</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Impact Level"/>
+            <Entry x:Name="txtImpactLvl" Placeholder="Enter Impact Level"/>
+            <Label Text="Impact Level Description"/>
+            <Entry x:Name="txtImpactLvlDesc" Placeholder="Enter Impact Level Description"/>
+            <Label Text="Frequency"/>
+            <Entry x:Name="txtFrequency" Placeholder="Enter Frequency"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Clicked="btnCancel_Clicked" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Add Action" Clicked="btnSaveUpdate_Clicked" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

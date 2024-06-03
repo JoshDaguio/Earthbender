@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Earthbender.Views.ListActions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Add New Record" Clicked="btnAddRecord"/>
+            <ListView x:Name="lstData" HasUnevenRows="True" ItemSelected="lsdata_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand">
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding ActionCode}" Grid.Row="0" Grid.Column="0"/>
+                                    <Label Text="{Binding Description}" Grid.Row="0" Grid.Column="1"/>
+                                    <Label Text="{Binding Category}" Grid.Row="0" Grid.Column="2"/>
+                                    <Label Text="{Binding ImpactLevel}" Grid.Row="0" Grid.Column="3"/>
+                                    <Label Text="{Binding Frequency}" Grid.Row="0" Grid.Column="4"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

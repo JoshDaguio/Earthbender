@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Earthbender.Android", "Earthbender\Earthbender.Android\Earthbender.Android.csproj", "{F3CE193B-4B81-4955-B577-4876BAD81097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Earthbender", "Earthbender\Earthbender\Earthbender.csproj", "{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CE193B-4B81-4955-B577-4876BAD81097}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA5A00C8-D4AE-4500-B46B-A8231A63ADB7}
+	EndGlobalSection
+EndGlobal
