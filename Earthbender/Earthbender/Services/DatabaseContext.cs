@@ -9,7 +9,7 @@ namespace Earthbender.Services
 {
     public class DatabaseContext:DbContext
     {
-        public DbSet<Actions> Actions { get; set; }
+        public DbSet<Actions> ActionEB { get; set; }
 
         public DatabaseContext()
         {
@@ -18,7 +18,7 @@ namespace Earthbender.Services
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Actions.db");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ActionEB.db");
             optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
 

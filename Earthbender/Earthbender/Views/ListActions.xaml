@@ -25,6 +25,7 @@
                                     <Label Text="{Binding Description}" Grid.Row="0" Grid.Column="1"/>
                                     <Label Text="{Binding Category}" Grid.Row="0" Grid.Column="2"/>
                                     <Label Text="{Binding ImpactLevel}" Grid.Row="0" Grid.Column="3"/>
+                                    <Label Text="{Binding ImpactDescription}" Grid.Row="0" Grid.Column="3"/>
                                     <Label Text="{Binding Frequency}" Grid.Row="0" Grid.Column="4"/>
                                 </Grid>
                             </Frame>

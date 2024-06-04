@@ -36,6 +36,7 @@ namespace Earthbender.Views
                 actionID = obj.Id;
                 txtDescription.Text = obj.Description;
                 txtImpactLvl.Text = obj.ImpactLevel;
+                txtImpactDesc.Text = obj.ImpactDescription;
                 txtFrequency.Text = obj.Frequency;
                 _isUpdate |= true;
             }
@@ -51,6 +52,7 @@ namespace Earthbender.Views
             obj.Description = txtDescription.Text;
             obj.Category = (string)txtCategory.SelectedItem;
             obj.ImpactLevel = txtImpactLvl.Text;
+            obj.ImpactDescription = txtImpactDesc.Text;
             obj.Frequency = txtFrequency.Text;
 
             if (_isUpdate)

@@ -10,6 +10,8 @@ namespace Earthbender.Models
         public string Description { get; set; }
         public string Category { get; set; }
         public string ImpactLevel { get; set; }
+        public string ImpactDescription { get; set; }
+        public string Image { get; set; }
         public string Frequency { get; set; }
         public string ActionCode
         {

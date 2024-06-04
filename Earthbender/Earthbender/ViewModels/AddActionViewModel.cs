@@ -21,7 +21,7 @@ namespace Earthbender.ViewModels
         public int InsertAction(Actions obj)
         {
             var _dbContext = getContext();
-            _dbContext.Actions.Add(obj);
+            _dbContext.ActionEB.Add(obj);
             int c = _dbContext.SaveChanges();
             return c;
         }
@@ -29,14 +29,14 @@ namespace Earthbender.ViewModels
         public async Task<List<Actions>> GetAllActions()
         {
             var _dbContext = getContext();
-            var res = await _dbContext.Actions.ToListAsync();
+            var res = await _dbContext.ActionEB.ToListAsync();
             return res;
         }
 
         public async Task<int> UpdateActions(Actions obj)
         {
             var _dbContext = getContext();
-            _dbContext.Actions.Update(obj);
+            _dbContext.ActionEB.Update(obj);
             int c = await _dbContext.SaveChangesAsync();
             return c;
         }
@@ -44,7 +44,7 @@ namespace Earthbender.ViewModels
         public int DeleteActions(Actions obj)
         {
             var _dbContext = getContext();
-            _dbContext.Actions.Remove(obj);
+            _dbContext.ActionEB.Remove(obj);
             int c = _dbContext.SaveChanges();
             return c;
         }
