@@ -5,11 +5,10 @@ using Xamarin.Forms;
 
 namespace Earthbender.ViewModels
 {
-    public class HomeViewModel : BaseViewModel
+    public class HomeViewModel 
     {
         public HomeViewModel()
         {
-            Title = "Home";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 

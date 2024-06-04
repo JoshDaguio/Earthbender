@@ -17,7 +17,7 @@ namespace Earthbender.Models
         {
             get
             {
-                return (string.IsNullOrEmpty(Category) ? "" : Category.Substring(0, 1)) + "00" + Id;
+                return (string.IsNullOrEmpty(Category) ? "" : Category.Substring(0, 1)) + Id.ToString("D3");
             }
 
         }

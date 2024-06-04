@@ -21,12 +21,9 @@
                                         <ColumnDefinition></ColumnDefinition>
                                         <ColumnDefinition></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding ActionCode}" Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="{Binding Description}" Grid.Row="0" Grid.Column="1"/>
-                                    <Label Text="{Binding Category}" Grid.Row="0" Grid.Column="2"/>
-                                    <Label Text="{Binding ImpactLevel}" Grid.Row="0" Grid.Column="3"/>
-                                    <Label Text="{Binding ImpactDescription}" Grid.Row="0" Grid.Column="3"/>
-                                    <Label Text="{Binding Frequency}" Grid.Row="0" Grid.Column="4"/>
+                                    <Label Text="{Binding ActionCode}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                                    <Label Text="{Binding Description}" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
+                                    <Label Text="{Binding Category}" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
                                 </Grid>
                             </Frame>
                         </ViewCell>

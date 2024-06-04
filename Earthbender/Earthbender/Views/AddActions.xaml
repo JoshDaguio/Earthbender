@@ -18,7 +18,15 @@
                 </Picker.ItemsSource>
             </Picker>
             <Label Text="Impact Level"/>
-            <Entry x:Name="txtImpactLvl" Placeholder="Enter Impact Level"/>
+            <Picker x:Name="txtImpactLvl" Title="Select Impact Level">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Low</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>High</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <Label Text="Impact Level Description"/>
             <Entry x:Name="txtImpactDesc" Placeholder="Enter Impact Level Description"/>
             <Label Text="Frequency"/>

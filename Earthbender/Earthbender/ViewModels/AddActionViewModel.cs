@@ -48,5 +48,12 @@ namespace Earthbender.ViewModels
             int c = _dbContext.SaveChanges();
             return c;
         }
+
+        public async Task<Actions> ViewAction(int id)
+        {
+            var _dbContext = getContext();
+            var action = await _dbContext.ActionEB.FindAsync(id);
+            return action;
+        }
     }
 }

@@ -23,10 +23,10 @@ namespace Earthbender.Views {
         private global::Xamarin.Forms.Picker txtCategory;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry txtImpactLvl;
+        private global::Xamarin.Forms.Picker txtImpactLvl;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry txtImpactLvlDesc;
+        private global::Xamarin.Forms.Entry txtImpactDesc;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry txtFrequency;
@@ -36,8 +36,8 @@ namespace Earthbender.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AddActions));
             txtDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtDescription");
             txtCategory = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "txtCategory");
-            txtImpactLvl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtImpactLvl");
-            txtImpactLvlDesc = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtImpactLvlDesc");
+            txtImpactLvl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "txtImpactLvl");
+            txtImpactDesc = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtImpactDesc");
             txtFrequency = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtFrequency");
         }
     }

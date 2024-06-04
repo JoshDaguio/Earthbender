@@ -35,7 +35,6 @@ namespace Earthbender.Views
             {
                 actionID = obj.Id;
                 txtDescription.Text = obj.Description;
-                txtImpactLvl.Text = obj.ImpactLevel;
                 txtImpactDesc.Text = obj.ImpactDescription;
                 txtFrequency.Text = obj.Frequency;
                 _isUpdate |= true;
@@ -44,6 +43,10 @@ namespace Earthbender.Views
             {
                 txtCategory.SelectedItem = categories.FirstOrDefault(c => c == obj.Category);
             }
+            if (txtImpactLvl.ItemsSource is IList<string> impactlevel)
+            {
+                txtCategory.SelectedItem = impactlevel.FirstOrDefault(c => c == obj.ImpactLevel);
+            }
         }
 
         private async void btnSaveUpdate_Clicked(object sender, EventArgs e)
@@ -51,7 +54,7 @@ namespace Earthbender.Views
             Actions obj = new Actions();
             obj.Description = txtDescription.Text;
             obj.Category = (string)txtCategory.SelectedItem;
-            obj.ImpactLevel = txtImpactLvl.Text;
+            obj.ImpactLevel = (string)txtImpactLvl.SelectedItem;
             obj.ImpactDescription = txtImpactDesc.Text;
             obj.Frequency = txtFrequency.Text;
 
