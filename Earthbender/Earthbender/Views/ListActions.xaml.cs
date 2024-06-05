@@ -42,19 +42,12 @@ namespace Earthbender.Views
             if (e.SelectedItem != null)
             {
                 Actions obj = (Actions)e.SelectedItem;
-                string res = await DisplayActionSheet("View", "Cancel", null, "View Action", "Update", "Delete");
+                string res = await DisplayActionSheet("View", "Cancel", null, "View Details");
 
                 switch (res)
                 {
-                    case "View Action":
+                    case "View Details":
                         await this.Navigation.PushAsync(new ViewAction(obj));
-                        break;
-                    case "Update":
-                        await this.Navigation.PushAsync(new AddActions(obj));
-                        break;
-                    case "Delete":
-                        viewModel.DeleteActions(obj);
-                        listActions();
                         break;
                 }
 

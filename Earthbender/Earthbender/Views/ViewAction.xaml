@@ -1,26 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Earthbender.Views.ViewAction">
+             x:Class="Earthbender.Views.ViewAction"
+             Title="Action View">
     <ContentPage.Content>
         <StackLayout>
-            <Label Grid.Row="0" Grid.Column="0" Text="Action Code:"/>
+            <Label Grid.Row="0" Grid.Column="0" Text="Action Code:" FontAttributes="Bold"/>
             <Label Grid.Row="0" Grid.Column="1" x:Name="lblActionCode" Text="Action Code"/>
 
-            <Label Grid.Row="1" Grid.Column="0" Text="Description:"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="Description:" FontAttributes="Bold"/>
             <Label Grid.Row="1" Grid.Column="1" x:Name="lblDescription" Text="Description"/>
 
-            <Label Grid.Row="2" Grid.Column="0" Text="Category:"/>
+            <Label Grid.Row="2" Grid.Column="0" Text="Category:" FontAttributes="Bold"/>
             <Label Grid.Row="2" Grid.Column="1" x:Name="lblCategory" Text="Category"/>
 
             <Label Grid.Row="3" Grid.Column="0" Text="Impact Level:" FontAttributes="Bold"/>
             <Label Grid.Row="3" Grid.Column="1" x:Name="lblImpactLvl" Text="Impact Level"/>
 
-            <Label Grid.Row="4" Grid.Column="0" Text="Impact Desc:" FontAttributes="Bold"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="Impact Description:" FontAttributes="Bold"/>
             <Label Grid.Row="4" Grid.Column="1" x:Name="lblImpactDesc" Text="Impact Description"/>
 
             <Label Grid.Row="5" Grid.Column="0" Text="Frequency:" FontAttributes="Bold"/>
             <Label Grid.Row="5" Grid.Column="1" x:Name="lblFrequency" Text="Frequency"/>
+
+            <Button Text="Add Point" Clicked="btnAddPoint_Clicked" HorizontalOptions="FillAndExpand"></Button>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Update" Clicked="btnUpdate_Clicked" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Delete" Clicked="btnDelete_Clicked" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
 
         </StackLayout>
     </ContentPage.Content>

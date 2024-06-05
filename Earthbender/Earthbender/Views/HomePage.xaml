@@ -3,11 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.HomePage"
              xmlns:vm="clr-namespace:Earthbender.ViewModels"
-             Title="{Binding Title}">
-
-    <ContentPage.BindingContext>
-        <vm:HomeViewModel />
-    </ContentPage.BindingContext>
+             Title="Home">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -24,8 +20,30 @@
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Home Page" FontSize="Title"/>
                 <Label Text="Add Home Page Contents Here" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                </Label>
+
+                <Label x:Name="lblTotalBadges" Text="Badges Obtained: 0"/>
+
+                <!-- Points Statistics Labels -->
+                <Label x:Name="lblAccumulatedPoints" Text="Points Accumulated: " FontSize="16"/>
+                <Label x:Name="lblFirePoints" Text="Fire: " FontSize="16"/>
+                <Label x:Name="lblWaterPoints" Text="Water: " FontSize="16"/>
+                <Label x:Name="lblAirPoints" Text="Air: " FontSize="16"/>
+                <Label x:Name="lblEarthPoints" Text="Earth: " FontSize="16"/>
+
+                <!-- Statistics Labels -->
+                <Label Text="Statistics" FontSize="Title" Padding="0,24,0,0"/>
+                <Label x:Name="lblTotalActions" Text="Total Actions: " FontSize="16"/>
+                <Label x:Name="lblFireActions" Text="Fire: " FontSize="16"/>
+                <Label x:Name="lblWaterActions" Text="Water: " FontSize="16"/>
+                <Label x:Name="lblAirActions" Text="Air: " FontSize="16"/>
+                <Label x:Name="lblEarthActions" Text="Earth: " FontSize="16"/>
+
+                <Label Text="Frequency" FontSize="Title" Padding="0,24,0,0"/>
+                <Label x:Name="lblDailyActions" Text="Daily Actions: " FontSize="16"/>
+                <Label x:Name="lblWeeklyActions" Text="Weekly Actions: " FontSize="16"/>
+                <Label x:Name="lblMonthlyActions" Text="Monthly Actions: " FontSize="16"/>
+                <Label x:Name="lblQuarterlyActions" Text="Quarterly Actions: " FontSize="16"/>
+                <Label x:Name="lblYearlyActions" Text="Yearly Actions: " FontSize="16"/>
             </StackLayout>
         </ScrollView>
     </Grid>

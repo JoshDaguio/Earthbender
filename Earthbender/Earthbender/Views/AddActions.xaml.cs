@@ -36,7 +36,6 @@ namespace Earthbender.Views
                 actionID = obj.Id;
                 txtDescription.Text = obj.Description;
                 txtImpactDesc.Text = obj.ImpactDescription;
-                txtFrequency.Text = obj.Frequency;
                 _isUpdate |= true;
             }
             if (txtCategory.ItemsSource is IList<string> categories)
@@ -47,6 +46,10 @@ namespace Earthbender.Views
             {
                 txtCategory.SelectedItem = impactlevel.FirstOrDefault(c => c == obj.ImpactLevel);
             }
+            if (txtFrequency.ItemsSource is IList<string> frequency)
+            {
+                txtFrequency.SelectedItem = frequency.FirstOrDefault(c => c == obj.Frequency);
+            }
         }
 
         private async void btnSaveUpdate_Clicked(object sender, EventArgs e)
@@ -56,7 +59,7 @@ namespace Earthbender.Views
             obj.Category = (string)txtCategory.SelectedItem;
             obj.ImpactLevel = (string)txtImpactLvl.SelectedItem;
             obj.ImpactDescription = txtImpactDesc.Text;
-            obj.Frequency = txtFrequency.Text;
+            obj.Frequency = (string)txtFrequency.SelectedItem;
 
             if (_isUpdate)
             {
@@ -70,7 +73,7 @@ namespace Earthbender.Views
             }
 
 
-            await this.Navigation.PopAsync();
+            await Navigation.PushAsync(new ListActions());
         }
 
         private async void btnCancel_Clicked(object sender, EventArgs e)

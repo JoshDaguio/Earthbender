@@ -3,11 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.ProfilePage"
              xmlns:vm="clr-namespace:Earthbender.ViewModels"
-             Title="{Binding Title}">
-
-    <ContentPage.BindingContext>
-        <vm:ProfileViewModel />
-    </ContentPage.BindingContext>
+             Title="Profile">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -26,6 +22,22 @@
                 <Label Text="Add Profile Page Contents Here" FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                 </Label>
+                <ListView x:Name="lstBadges">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" />
+                                    <StackLayout>
+                                        <Label Text="{Binding Name}" FontSize="16"/>
+                                        <Label Text="{Binding Description}" FontSize="14"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Reset Points and Badges" Clicked="btnReset_Clicked" />
             </StackLayout>
         </ScrollView>
     </Grid>

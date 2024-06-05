@@ -30,7 +30,17 @@
             <Label Text="Impact Level Description"/>
             <Entry x:Name="txtImpactDesc" Placeholder="Enter Impact Level Description"/>
             <Label Text="Frequency"/>
-            <Entry x:Name="txtFrequency" Placeholder="Enter Frequency"/>
+            <Picker x:Name="txtFrequency" Title="Select Frequency">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Daily</x:String>
+                        <x:String>Weekly</x:String>
+                        <x:String>Monthly</x:String>
+                        <x:String>Quarterly</x:String>
+                        <x:String>Yearly</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Clicked="btnCancel_Clicked" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Add Action" Clicked="btnSaveUpdate_Clicked" HorizontalOptions="FillAndExpand"></Button>

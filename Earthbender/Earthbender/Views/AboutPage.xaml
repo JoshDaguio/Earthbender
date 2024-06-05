@@ -3,11 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.AboutPage"
              xmlns:vm="clr-namespace:Earthbender.ViewModels"
-             Title="{Binding Title}">
-    
-    <ContentPage.BindingContext>
-        <vm:AboutViewModel />
-    </ContentPage.BindingContext>
+             Title="About">
     
     <ContentPage.Resources>
         <ResourceDictionary>
