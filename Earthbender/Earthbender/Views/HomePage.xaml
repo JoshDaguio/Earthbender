@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.HomePage"
              xmlns:vm="clr-namespace:Earthbender.ViewModels"
-             Title="Home">
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -11,39 +11,650 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid BackgroundColor="#F9F8F6">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Home Page" FontSize="Title"/>
-                <Label Text="Add Home Page Contents Here" FontSize="16" Padding="0,0,0,0"/>
+            <StackLayout Orientation="Vertical"
+                         Padding="20" 
+                         Spacing="10"
+                         BackgroundColor="#F9F8F6">
 
-                <Label x:Name="lblTotalBadges" Text="Badges Obtained: 0"/>
+                <!--Profile-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
 
-                <!-- Points Statistics Labels -->
-                <Label x:Name="lblAccumulatedPoints" Text="Points Accumulated: " FontSize="16"/>
-                <Label x:Name="lblFirePoints" Text="Fire: " FontSize="16"/>
-                <Label x:Name="lblWaterPoints" Text="Water: " FontSize="16"/>
-                <Label x:Name="lblAirPoints" Text="Air: " FontSize="16"/>
-                <Label x:Name="lblEarthPoints" Text="Earth: " FontSize="16"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition  Width="3*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
 
-                <!-- Statistics Labels -->
-                <Label Text="Statistics" FontSize="Title" Padding="0,24,0,0"/>
-                <Label x:Name="lblTotalActions" Text="Total Actions: " FontSize="16"/>
-                <Label x:Name="lblFireActions" Text="Fire: " FontSize="16"/>
-                <Label x:Name="lblWaterActions" Text="Water: " FontSize="16"/>
-                <Label x:Name="lblAirActions" Text="Air: " FontSize="16"/>
-                <Label x:Name="lblEarthActions" Text="Earth: " FontSize="16"/>
+                    <Image Source="ProfileIcon.png"
+                           Grid.RowSpan="2"
+                           Grid.Column="0"
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           HorizontalOptions="Start"/>
+                    <Label Text="Hello 👋"
+                           FontSize="14"
+                           Grid.Row="0" 
+                           Grid.Column="1"
+                           TextColor="Black"/>
+                    <Label Text="Earthbender! 🌍" 
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           Padding="0,0,0,0" 
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           TextColor="#45AB69"
+                           Margin="0,-12,0,0"/>
+                    <Image Source="NotificationIcon.png"
+                           Grid.RowSpan="2"
+                           Grid.Column="2"
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           HorizontalOptions="Start"/>
+                </Grid>
 
-                <Label Text="Frequency" FontSize="Title" Padding="0,24,0,0"/>
-                <Label x:Name="lblDailyActions" Text="Daily Actions: " FontSize="16"/>
-                <Label x:Name="lblWeeklyActions" Text="Weekly Actions: " FontSize="16"/>
-                <Label x:Name="lblMonthlyActions" Text="Monthly Actions: " FontSize="16"/>
-                <Label x:Name="lblQuarterlyActions" Text="Quarterly Actions: " FontSize="16"/>
-                <Label x:Name="lblYearlyActions" Text="Yearly Actions: " FontSize="16"/>
+                <!--Badges and Points-->
+                <Grid Margin="0,15,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition  Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame CornerRadius="10" 
+                           Grid.Column="0"
+>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Text="Badges Obtained "
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   TextColor="Black"
+                                   VerticalOptions="Center"/>
+                            <Image Source="SaveOurPlanet.png"
+                                   Grid.Column="1"
+                                   HeightRequest="50"
+                                   WidthRequest="50"
+                                   VerticalOptions="Center"/>
+                            <Label x:Name="lblTotalBadges" 
+                                   Text=""
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   Grid.Row="1"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="2"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#F6AF31"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame CornerRadius="10"  
+                            Grid.Column="1">
+                        <Grid Margin="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Points Accumulated"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   TextColor="Black"
+                                   VerticalOptions="Center"/>
+                            <Image Source="LoveTheEarth.png"
+                                   Grid.Column="1"
+                                   HeightRequest="50"
+                                   WidthRequest="50"
+                                   VerticalOptions="Center"/>
+                            <Label x:Name="lblAccumulatedPoints" 
+                                   Text=""
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   Grid.Row="1"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="2"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#F6AF31"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+
+                <!-- Fire, Water, Air, and Earth Icons-->
+                <Grid Margin="0,2,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Frame Grid.Row="0"
+                           Grid.Column="0"
+                           Padding="0"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Center"
+                           CornerRadius="100"
+                           IsClippedToBounds="True"
+                           HeightRequest="60"
+                           WidthRequest="60"
+                           BackgroundColor="#F9F8F6"
+                           HasShadow="False">
+                        <Image Source="FireIcon1.png"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand" />
+                    </Frame>
+                    <Frame Grid.Row="0"
+                           Grid.Column="1"
+                           Padding="0"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Center"
+                           CornerRadius="100"
+                           IsClippedToBounds="True"
+                           HeightRequest="60"
+                           WidthRequest="60"
+                           BackgroundColor="#F9F8F6"
+                           HasShadow="False">
+                        <Image Source="WaterIcon1.png"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand" />
+                    </Frame>
+                    <Frame Grid.Row="0"
+                           Grid.Column="2"
+                           Padding="0"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Center"
+                           CornerRadius="100"
+                           IsClippedToBounds="True"
+                           HeightRequest="75"
+                           WidthRequest="75"
+                           BackgroundColor="#F9F8F6"
+                           HasShadow="False">
+                        <Image Source="AirIcon1.png"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand" />
+                    </Frame>
+                    <Frame Grid.Row="0"
+                           Grid.Column="3"
+                           Padding="0"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Center"
+                           CornerRadius="35"
+                           IsClippedToBounds="True"
+                           HeightRequest="60"
+                           WidthRequest="60"
+                           BackgroundColor="#F9F8F6"
+                           HasShadow="False">
+                        <Image Source="EarthIcon1.png"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               HeightRequest="70"
+                               WidthRequest="70"
+                               Aspect="AspectFit" />
+                    </Frame>
+                </Grid>
+
+                <!-- Fire, Water, Air, and Earth Points-->
+                <Grid Margin="0,-10,0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="FIRE" 
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="#D04936"
+                           Grid.Column="0"
+                           HorizontalTextAlignment="Center"/>
+                    <Label x:Name="lblFirePoints" 
+                           Text=""
+                           TextColor="Black"
+                           FontSize="12"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <Label Text="WATER"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="#8CD0FF"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Center"/>
+                    <Label x:Name="lblWaterPoints" 
+                           Text="" 
+                           TextColor="Black"
+                           FontSize="12"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <Label Text="AIR" 
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="#C384EF"
+                           Grid.Column="2"
+                           HorizontalTextAlignment="Center"/>
+                    <Label x:Name="lblAirPoints" 
+                           Text="" 
+                           TextColor="Black"
+                           FontSize="12"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <Label Text="EARTH" 
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="#70A76E"
+                           Grid.Column="3" 
+                           HorizontalTextAlignment="Center"/>
+                    <Label x:Name="lblEarthPoints" 
+                           Text="" 
+                           TextColor="Black"
+                           FontSize="12"
+                           Grid.Column="3"
+                           Grid.Row="1"
+                           HorizontalTextAlignment="Center"/>
+                </Grid>
+
+                <!--Quote-->
+                <Frame CornerRadius="10"
+                       BackgroundColor="#45AB69">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="&quot;Small acts, when multiplied by millions of people, can transform the world.&quot;" 
+                               TextColor="White"
+                               Grid.Column="0"
+                               VerticalOptions="Center"/>
+                        <Image Source="PickingUpTrash.png"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               HeightRequest="100"
+                               WidthRequest="100"
+                               Aspect="AspectFit" 
+                               Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <!--Total, Fire, Water, Air, and Earth Statistics-->
+                <Label Text="Your Statistics" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="0,10,0,10"/>
+
+                <Frame CornerRadius="10"
+                       Padding="10,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="SustainabilityIcon1.png"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Total Actions" 
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="lblTotalActions" 
+                               Text="" 
+                               TextColor="#45AB69"
+                               FontSize="16"
+                               Grid.Column="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="10"
+                       Padding="10,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="FireIcon2.png"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Fire" 
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="lblFireActions" 
+                               Text="" 
+                               TextColor="#D04936"
+                               FontSize="16"
+                               Grid.Column="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="10"
+                       Padding="10,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="WaterIcon2.png"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Water" 
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="lblWaterActions" 
+                               Text="" 
+                               TextColor="#8CD0FF"
+                               FontSize="16"
+                               Grid.Column="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="10"
+                       Padding="10,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="AirIcon2.png"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Air" 
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="lblAirActions" 
+                               Text="" 
+                               TextColor="#C384EF"
+                               FontSize="16"
+                               Grid.Column="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="10"
+                      Padding="10,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="EarthIcon2.png"
+                              Grid.Column="0"
+                              Grid.Row="0"
+                              HeightRequest="60"
+                              WidthRequest="60"
+                              VerticalOptions="Center"
+                              HorizontalOptions="Center"/>
+                        <Label Text="Earth" 
+                              FontSize="18"
+                              FontAttributes="Bold"
+                              TextColor="Black"
+                              Grid.Column="1"
+                              Grid.Row="0"
+                              VerticalOptions="Center"
+                              HorizontalOptions="Start"/>
+                        <Label x:Name="lblEarthActions" 
+                              Text="" 
+                              TextColor="#70A76E"
+                              FontSize="16"
+                              Grid.Column="2"
+                              VerticalOptions="Center"
+                              HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Label Text="Bending Frequency" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="0,10,0,10"/>
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Frame CornerRadius="0"
+                           HasShadow="False"
+                           Padding="0"
+                           BackgroundColor="Transparent"
+                           BorderColor="Transparent">
+                        <Grid>
+                            <BoxView CornerRadius="10,10,0,0" 
+                                     BackgroundColor="#01377D"
+                                     HeightRequest="200"
+                                     WidthRequest="200"
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="Start" />
+                            <Image Source="SavingTheEarth.png"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   HeightRequest="200"
+                                   WidthRequest="200"
+                                   Aspect="AspectFit"
+                                   BackgroundColor="Transparent"
+                                   Grid.Row="0"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+
+                <Frame BackgroundColor="#01377D"
+                       CornerRadius="10"
+                       Margin="0,-25,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Daily Actions" 
+                               FontSize="16"
+                               Grid.Row="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        <Label x:Name="lblDailyActions" 
+                               Text="" 
+                               FontSize="16"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+
+                        <Label Text="Weekly Actions" 
+                               FontSize="16"
+                               Grid.Row="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        <Label x:Name="lblWeeklyActions" 
+                               Text="" 
+                               FontSize="16"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+
+                        <Label Text="Monthly Actions" 
+                               FontSize="16"
+                               Grid.Row="3"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        <Label x:Name="lblMonthlyActions" 
+                               Text="" 
+                               FontSize="16"
+                               Grid.Row="3"
+                               Grid.Column="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+
+                        <Label Text="Quarterly Actions" 
+                               FontSize="16"
+                               Grid.Row="4"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        <Label x:Name="lblQuarterlyActions" 
+                               Text="" 
+                               FontSize="16"
+                               Grid.Row="4"
+                               Grid.Column="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+
+                        <Label Text="Yearly Actions" 
+                               FontSize="16"
+                               Grid.Row="5"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        <Label x:Name="lblYearlyActions" 
+                               Text="" 
+                               FontSize="16"
+                               Grid.Row="5"
+                               Grid.Column="1"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                    </Grid>
+                </Frame>
+                
             </StackLayout>
         </ScrollView>
     </Grid>

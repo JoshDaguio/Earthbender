@@ -1,51 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Earthbender.Views.AddActions">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Description"/>
-            <Entry x:Name="txtDescription" Placeholder="Enter Description"/>
-            <Label Text="Category"/>
-            <Picker x:Name="txtCategory" Title="Select Category">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Earth</x:String>
-                        <x:String>Water</x:String>
-                        <x:String>Air</x:String>
-                        <x:String>Fire</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <Label Text="Impact Level"/>
-            <Picker x:Name="txtImpactLvl" Title="Select Impact Level">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Low</x:String>
-                        <x:String>Medium</x:String>
-                        <x:String>High</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <Label Text="Impact Level Description"/>
-            <Entry x:Name="txtImpactDesc" Placeholder="Enter Impact Level Description"/>
-            <Label Text="Frequency"/>
-            <Picker x:Name="txtFrequency" Title="Select Frequency">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Daily</x:String>
-                        <x:String>Weekly</x:String>
-                        <x:String>Monthly</x:String>
-                        <x:String>Quarterly</x:String>
-                        <x:String>Yearly</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Clicked="btnCancel_Clicked" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Add Action" Clicked="btnSaveUpdate_Clicked" HorizontalOptions="FillAndExpand"></Button>
-            </StackLayout>
+             x:Class="Earthbender.Views.AddActions"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F9F8F6">
 
+    <ContentPage.Resources>
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="FontSize" Value="Medium" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10" VerticalOptions="CenterAndExpand">
+
+            <!-- White Frame to contain the form -->
+            <Frame BackgroundColor="White"  
+                   HasShadow="False"
+                   Padding="20">
+
+                <StackLayout Spacing="10">
+
+                    <Label Text="Add/Update Action" 
+                           FontSize="22" 
+                           FontAttributes="Bold"
+                           TextColor="#45AB69"
+                           Margin="0,10,0,10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+
+                    <!-- Description -->
+                    <Label Text="Description" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Frame BackgroundColor="Transparent" BorderColor="#CCCCCC" CornerRadius="5" Padding="10,0">
+                        <Entry x:Name="txtDescription" Placeholder="Enter Description" Style="{StaticResource EntryStyle}" />
+                    </Frame>
+
+                    <!-- Category -->
+                    <Label Text="Category"
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Frame BackgroundColor="Transparent" BorderColor="#CCCCCC" CornerRadius="5" Padding="10,0">
+                        <Picker x:Name="txtCategory" Title="Select Category" Style="{StaticResource EntryStyle}">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Earth</x:String>
+                                    <x:String>Water</x:String>
+                                    <x:String>Air</x:String>
+                                    <x:String>Fire</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Frame>
+
+                    <!-- Impact Level -->
+                    <Label Text="Impact Level" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Frame BackgroundColor="Transparent" BorderColor="#CCCCCC" CornerRadius="5" Padding="10,0">
+                        <Picker x:Name="txtImpactLvl" Title="Select Impact Level" Style="{StaticResource EntryStyle}">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Low</x:String>
+                                    <x:String>Medium</x:String>
+                                    <x:String>High</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Frame>
+
+                    <!-- Impact Level Description -->
+                    <Label Text="Impact Level Description" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Frame BackgroundColor="Transparent" BorderColor="#CCCCCC" CornerRadius="5" Padding="10,0">
+                        <Entry x:Name="txtImpactDesc" Placeholder="Enter Impact Level Description" Style="{StaticResource EntryStyle}" />
+                    </Frame>
+
+                    <!-- Frequency -->
+                    <Label Text="Frequency" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Frame BackgroundColor="Transparent" BorderColor="#CCCCCC" CornerRadius="5" Padding="10,0">
+                        <Picker x:Name="txtFrequency" Title="Select Frequency" Style="{StaticResource EntryStyle}">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Daily</x:String>
+                                    <x:String>Weekly</x:String>
+                                    <x:String>Monthly</x:String>
+                                    <x:String>Quarterly</x:String>
+                                    <x:String>Yearly</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Frame>
+
+                    <!-- Buttons -->
+                    <StackLayout Orientation="Horizontal" 
+                                 Spacing="10"
+                                 Margin="0,10,0,0">
+                        <Button Text="Cancel" 
+                                Clicked="btnCancel_Clicked" 
+                                HorizontalOptions="FillAndExpand"
+                                BackgroundColor="#D04936"
+                                TextColor="White"/>
+                        <Button Text="Add Action" 
+                                Clicked="btnSaveUpdate_Clicked" 
+                                HorizontalOptions="FillAndExpand"
+                                BackgroundColor="#45AB69"
+                                TextColor="White"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

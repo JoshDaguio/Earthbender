@@ -2,34 +2,99 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.ViewAction"
-             Title="Action View">
+             Title="Actions List"
+             BackgroundColor="#F9F8F6">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style x:Key="BoldLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Grid.Row="0" Grid.Column="0" Text="Action Code:" FontAttributes="Bold"/>
-            <Label Grid.Row="0" Grid.Column="1" x:Name="lblActionCode" Text="Action Code"/>
+        <StackLayout Padding="20" Spacing="10"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <Frame BackgroundColor="White" Padding="20" CornerRadius="5" HasShadow="True">
+                <StackLayout Spacing="10">
 
-            <Label Grid.Row="1" Grid.Column="0" Text="Description:" FontAttributes="Bold"/>
-            <Label Grid.Row="1" Grid.Column="1" x:Name="lblDescription" Text="Description"/>
+                    <Label Text="Action Details" 
+                           FontSize="22" 
+                           FontAttributes="Bold"
+                           TextColor="#45AB69"
+                           Margin="0,10,0,10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
 
-            <Label Grid.Row="2" Grid.Column="0" Text="Category:" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Grid.Column="1" x:Name="lblCategory" Text="Category"/>
+                    <Grid ColumnSpacing="10" RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="3" Grid.Column="0" Text="Impact Level:" FontAttributes="Bold"/>
-            <Label Grid.Row="3" Grid.Column="1" x:Name="lblImpactLvl" Text="Impact Level"/>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Action Code:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="0" Grid.Column="1" x:Name="lblActionCode" Text="Action Code" Style="{StaticResource LabelStyle}" />
 
-            <Label Grid.Row="4" Grid.Column="0" Text="Impact Description:" FontAttributes="Bold"/>
-            <Label Grid.Row="4" Grid.Column="1" x:Name="lblImpactDesc" Text="Impact Description"/>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Description:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="1" Grid.Column="1" x:Name="lblDescription" Text="Description" Style="{StaticResource LabelStyle}" />
 
-            <Label Grid.Row="5" Grid.Column="0" Text="Frequency:" FontAttributes="Bold"/>
-            <Label Grid.Row="5" Grid.Column="1" x:Name="lblFrequency" Text="Frequency"/>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Category:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="2" Grid.Column="1" x:Name="lblCategory" Text="Category" Style="{StaticResource LabelStyle}" />
 
-            <Button Text="Add Point" Clicked="btnAddPoint_Clicked" HorizontalOptions="FillAndExpand"></Button>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Impact Level:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="3" Grid.Column="1" x:Name="lblImpactLvl" Text="Impact Level" Style="{StaticResource LabelStyle}" />
 
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Update" Clicked="btnUpdate_Clicked" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Delete" Clicked="btnDelete_Clicked" HorizontalOptions="FillAndExpand"></Button>
-            </StackLayout>
+                        <Label Grid.Row="4" Grid.Column="0" Text="Impact Description:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="4" Grid.Column="1" x:Name="lblImpactDesc" Text="Impact Description" Style="{StaticResource LabelStyle}" />
 
+                        <Label Grid.Row="5" Grid.Column="0" Text="Frequency:" Style="{StaticResource BoldLabelStyle}" />
+                        <Label Grid.Row="5" Grid.Column="1" x:Name="lblFrequency" Text="Frequency" Style="{StaticResource LabelStyle}" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Text="Add Point" 
+                                Clicked="btnAddPoint_Clicked" 
+                                Grid.Row="0"
+                                BackgroundColor="#45AB69"/>
+                        <Button Grid.Column="0" 
+                                Text="Update" 
+                                Clicked="btnUpdate_Clicked" 
+                                BackgroundColor="#01377D"
+                                Grid.Row="1"/>
+                        <Button Grid.Column="1" 
+                                Text="Delete" 
+                                Clicked="btnDelete_Clicked" 
+                                BackgroundColor="#D04936"
+                                Grid.Row="1"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

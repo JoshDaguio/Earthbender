@@ -3,18 +3,18 @@ aotassemblies=false
 androidaddkeepalives=
 androidaotmode=none
 androidembedprofilers=
-androidenableprofiledaot=
+androidenableprofiledaot=false
 androiddextool=d8
-androidlinktool=
+androidlinktool=r8
 androidlinkresources=
 androidpackageformat=apk
-embedassembliesintoapk=false
+embedassembliesintoapk=true
 androidlinkmode=none
 androidlinkskip=
 androidsdkbuildtoolsversion=32.0.0
-androidsdkpath=c:\program files (x86)\android\android-sdk\
+androidsdkpath=d:\android\android-sdk\
 androidndkpath=
-javasdkpath=c:\program files (x86)\android\openjdk\jdk-17.0.8.101-hotspot\
+javasdkpath=d:\android\openjdk\jdk-17.0.8.101-hotspot\
 androidsequencepointsmode=none
 xamarinandroidversion=13.2.2-0
 monosymbolarchive=false
@@ -25,11 +25,9 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638530485453175578
+_nugetassetstimestamp=638533050678275746
 typemapkind=strings-asm
-androidsupportedabis=arm64-v8a
-armeabi-v7a
-x86
-x86_64
+androidsupportedabis=armeabi-v7a
+arm64-v8a
 androidmanifestplaceholders=
-projectfullpath=c:\joshua\iskul\pdc03\final project\earthbender\earthbender\earthbender.android\earthbender.android.csproj
+projectfullpath=d:\users\pc\coding grinds\repositories\earthbender\earthbender\earthbender.android\earthbender.android.csproj

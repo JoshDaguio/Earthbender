@@ -3,25 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Earthbender.Views.AboutPage"
              xmlns:vm="clr-namespace:Earthbender.ViewModels"
-             Title="About">
-    
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F9F8F6">
+
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
+            <!-- Define custom colors -->
+            <Color x:Key="PrimaryColor">#45AB69</Color>
+            <Color x:Key="SecondaryColor">#01377D</Color>
+            <Color x:Key="TextColor">#333333</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid BackgroundColor="#F9F8F6"
+          VerticalOptions="Center"
+          HorizontalOptions="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="About Page" FontSize="Title"/>
-                <Label Text="Add About Page Contents Here" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                </Label>
+            <StackLayout Orientation="Vertical"
+                         Padding="20" 
+                         Spacing="20"
+                         BackgroundColor="#F9F8F6">
+
+                <!-- Logo and Title Section -->
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="EarthbenderLogo.png"
+                           WidthRequest="225"/>
+                    <Label Text="Earthbender" 
+                           HorizontalTextAlignment="Center"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource PrimaryColor}"/>
+                </StackLayout>
+
+                <!-- Description Section -->
+                <Label Text="It is a minimalist, user-friendly mobile application designed to empower users to bend their daily habits towards sustainability." 
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource TextColor}"
+                       FontSize="16" 
+                       Padding="5,0"
+                       Margin="0,10"/>
+
             </StackLayout>
         </ScrollView>
     </Grid>

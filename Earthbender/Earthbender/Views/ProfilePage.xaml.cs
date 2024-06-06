@@ -4,6 +4,10 @@ using System.ComponentModel;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
+using Earthbender.Models;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Earthbender.Views
 {
@@ -58,6 +62,57 @@ namespace Earthbender.Views
             LoadProfileData();
 
             DisplayAlert("Success", "Points and badges have been reset successfully.", "OK");
+        }
+      
+        //badge tap download
+        private async void OnBadgeTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item is Badge badge)
+            {
+                bool download = await DisplayAlert("Download Badge", $"Would you like to download the {badge.Name}?", "Yes", "No");
+                if (download)
+                {
+                    await DownloadImageAsync(badge.ImageUrl, badge.Name);
+                }
+            }
+        }
+
+        private async Task DownloadImageAsync(string imageUrl, string imageName)
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = await client.GetAsync(imageUrl);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        using (var stream = await response.Content.ReadAsStreamAsync())
+                        {
+                            using (MemoryStream memoryStream = new MemoryStream())
+                            {
+                                await stream.CopyToAsync(memoryStream);
+                                byte[] imageBytes = memoryStream.ToArray();
+                                var filePath = Path.Combine(FileSystem.AppDataDirectory, imageName + ".jpg");
+                                File.WriteAllBytes(filePath, imageBytes);
+
+                                await Share.RequestAsync(new ShareFileRequest
+                                {
+                                    Title = "Download Achievement Image",
+                                    File = new ShareFile(filePath)
+                                });
+                            }
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Image not found", "OK");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
         }
     }
 }

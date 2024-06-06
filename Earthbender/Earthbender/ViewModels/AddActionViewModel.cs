@@ -102,11 +102,56 @@ namespace Earthbender.ViewModels
             Preferences.Set("Badges", string.Join(",", badges.Select(b => b.Name)));
         }
 
-
         public List<Badge> GetUserBadges()
         {
-            var badges = Preferences.Get("Badges", "").Split(',').Where(b => !string.IsNullOrEmpty(b)).Select(b => new Badge { Name = b }).ToList();
+            var badges = Preferences.Get("Badges", "")
+                                    .Split(',')
+                                    .Where(b => !string.IsNullOrEmpty(b))
+                                    .Select(b => new Badge
+                                    {
+                                        Name = b,
+                                        Description = GetDescription(b),
+                                        ImageUrl = GetImageUrl(b)
+                                    }).ToList();
             return badges;
+        }
+
+        private string GetDescription(string badgeName)
+        {
+            switch (badgeName)
+            {
+                case "Avatar Badge":
+                    return "Earned 20 Total Points";
+                case "Fire Bender Badge":
+                    return "Earned 5 Points in Fire";
+                case "Water Bender Badge":
+                    return "Earned 5 Points in Water";
+                case "Air Bender Badge":
+                    return "Earned 5 Points in Air";
+                case "Earth Bender Badge":
+                    return "Earned 5 Points in Earth";
+                default:
+                    return string.Empty;
+            }
+        }
+
+        private string GetImageUrl(string badgeName)
+        {
+            switch (badgeName)
+            {
+                case "Avatar Badge":
+                    return "https://ih1.redbubble.net/image.1262029934.5194/st,small,507x507-pad,600x600,f8f8f8.jpg";
+                case "Fire Bender Badge":
+                    return "https://static.wikia.nocookie.net/avatar/images/4/4b/Firebending_emblem.png/revision/latest?cb=20230412000430";
+                case "Water Bender Badge":
+                    return "https://static.wikia.nocookie.net/avatar/images/5/50/Waterbending_emblem.png/revision/latest?cb=20230412000516";
+                case "Air Bender Badge":
+                    return "https://static.wikia.nocookie.net/avatar/images/8/82/Airbending_emblem.png/revision/latest?cb=20230412000157";
+                case "Earth Bender Badge":
+                    return "https://static.wikia.nocookie.net/avatar/images/e/e4/Earthbending_emblem.png/revision/latest?cb=20230412000410";
+                default:
+                    return string.Empty;
+            }
         }
 
     }

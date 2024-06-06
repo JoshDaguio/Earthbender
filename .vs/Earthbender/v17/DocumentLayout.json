@@ -1,0 +1,471 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Earthbender.Android||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\earthbender.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\earthbender.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender.android\\properties\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|solutionrelative:earthbender\\earthbender.android\\properties\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|solutionrelative:earthbender\\earthbender.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\earthbender.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\earthbender.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\viewmodels\\addactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\viewmodels\\addactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\viewaction.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\viewaction.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\addactions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\addactions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\listactions.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\listactions.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\listactions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\listactions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\views\\addactions.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\views\\addactions.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\earthbender\\earthbender.android\\resources\\values\\styles.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|solutionrelative:earthbender\\earthbender.android\\resources\\values\\styles.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\earthbender\\earthbender.android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|solutionrelative:earthbender\\earthbender.android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\models\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\models\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC8BC2C-A91C-40B5-B3FC-1C04CDF91657}|Earthbender\\Earthbender\\Earthbender.csproj|solutionrelative:earthbender\\earthbender\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\earthbender\\earthbender.android\\assets\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|solutionrelative:earthbender\\earthbender.android\\assets\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE193B-4B81-4955-B577-4876BAD81097}|Earthbender\\Earthbender.Android\\Earthbender.Android.csproj|d:\\users\\pc\\coding grinds\\repositories\\earthbender\\earthbender\\earthbender.android\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|aab28e7c-f003-4519-9e1c-af7531e4cacf"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e3fb24c2-2e84-3146-a5f8-bc25bbc68f8a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Properties\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\Properties\\AndroidManifest.xml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Properties\\AndroidManifest.xml",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\Properties\\AndroidManifest.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-06T22:13:46.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Earthbender.Android",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Earthbender.Android.csproj",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\Earthbender.Android.csproj",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Earthbender.Android.csproj*",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\Earthbender.Android.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T22:09:37.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Earthbender",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Earthbender.csproj",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Earthbender.csproj",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Earthbender.csproj",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Earthbender.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T22:04:57.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Earthbender",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Earthbender.csproj",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Earthbender.csproj",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Earthbender.csproj",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Earthbender.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T22:04:59.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\MainActivity.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\MainActivity.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\MainActivity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:01:37.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\ProfilePage.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ProfilePage.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\ProfilePage.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:13:12.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\AboutPage.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AboutPage.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\AboutPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:35:47.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\ProfilePage.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\ProfilePage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:07:20.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\App.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\App.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\App.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T09:57:56.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\App.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\App.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\App.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:45:33.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\AppShell.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\AppShell.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\AppShell.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T08:11:41.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\HomePage.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\HomePage.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\HomePage.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\HomePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T08:03:22.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddActions.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AddActions.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\AddActions.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AddActions.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\AddActions.xaml.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAD0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:07:15.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ViewAction.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ViewAction.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\ViewAction.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ViewAction.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\ViewAction.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:06:10.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddActionViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\ViewModels\\AddActionViewModel.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\ViewModels\\AddActionViewModel.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\ViewModels\\AddActionViewModel.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\ViewModels\\AddActionViewModel.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwEsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:18:10.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AboutPage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AboutPage.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\AboutPage.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AboutPage.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\AboutPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:19:05.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListActions.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ListActions.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\ListActions.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ListActions.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\ListActions.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:06:29.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\HomePage.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\HomePage.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\HomePage.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwEYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:07:16.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ListActions.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ListActions.xaml.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\ListActions.xaml.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\ListActions.xaml.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\ListActions.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:45:13.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddActions.xaml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AddActions.xaml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Views\\AddActions.xaml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Views\\AddActions.xaml",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Views\\AddActions.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T08:28:20.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "styles.xml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Resources\\values\\styles.xml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\Resources\\values\\styles.xml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Resources\\values\\styles.xml",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\Resources\\values\\styles.xml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-06T16:38:48.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "colors.xml",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Resources\\values\\colors.xml",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\Resources\\values\\colors.xml",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Resources\\values\\colors.xml",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\Resources\\values\\colors.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-06T16:38:43.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Actions.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Models\\Actions.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Models\\Actions.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Models\\Actions.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Models\\Actions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:46:07.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Badge.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Models\\Badge.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\Models\\Badge.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\Models\\Badge.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\Models\\Badge.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:46:09.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AboutAssets.txt",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Assets\\AboutAssets.txt",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender.Android\\Assets\\AboutAssets.txt",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender.Android\\Assets\\AboutAssets.txt",
+              "RelativeToolTip": "Earthbender\\Earthbender.Android\\Assets\\AboutAssets.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-06T09:57:53.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\AssemblyInfo.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T10:05:51.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomePage.xaml.g.cs",
+              "DocumentMoniker": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs",
+              "RelativeDocumentMoniker": "Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs",
+              "ToolTip": "D:\\Users\\PC\\Coding Grinds\\Repositories\\Earthbender\\Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs",
+              "RelativeToolTip": "Earthbender\\Earthbender\\obj\\Debug\\netstandard2.1\\Views\\HomePage.xaml.g.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:47:45.841Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

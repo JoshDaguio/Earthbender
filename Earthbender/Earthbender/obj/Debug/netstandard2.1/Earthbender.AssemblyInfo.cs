@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Earthbender")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+577e6ae433633b68754f3102e2e20d25c6006a94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Earthbender")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Earthbender")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
